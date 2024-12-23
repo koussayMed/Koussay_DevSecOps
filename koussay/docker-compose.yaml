@@ -6,8 +6,8 @@ services:
     container_name: mysql-db
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: Imen_Chaari2023
-      MYSQL_DATABASE: enis_tp
+      MYSQL_ROOT_PASSWORD: koussay  
+      MYSQL_DATABASE: koussay
     ports:
       - "3307:3306"
     volumes:
