@@ -12,17 +12,13 @@ services:
       - "3307:3306"
     
   backend-app:
-    image: backend:latest  # Use the already built image
+    image: backend:latest  
     container_name: backend-app
-    restart: always
     ports:
       - "8001:8000"
-    depends_on:
-      mysql:
-        condition: service_healthy
     
   frontend-app:
-    image: frontend-app:latest  # Use the already built image
+    image: frontend-app:latest 
     container_name: frontend-app
     restart: always
     ports:
